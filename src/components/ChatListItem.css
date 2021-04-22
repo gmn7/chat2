@@ -1,0 +1,69 @@
+/* ajustar corpo de cada mensagem */
+.chatListItem {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  height: 70px;
+}
+/* ajustar a cor quando se passa o mouse */
+.chatListItem:hover {
+  background-color: #f5f5f5;
+}
+/* ajustar a cor quando seleciona a conversa */
+
+.chatListItem.active {
+  background-color: #ebebeb;
+}
+
+/* ajustar foto das conversas */
+.chatListItem--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  margin-left: 15px;
+}
+/* ajustar as linhas da conversa*/
+.chatListItem--lines {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  padding-right: 15px;
+  margin-left: 15px;
+  /* ajustar para não estourar a div caso a mensagem for grande*/
+  min-width: 0;
+  flex-wrap: wrap;
+}
+/* ajustar linha para deixar um embaixo do outro */
+.chatListItem--Line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+/* Ajustar a fonte do nome */
+.chatListItem--name {
+  font-size: 17px;
+  color: #000;
+}
+/* ajustar a fonte da data */
+.chatListItem--date {
+  font-size: 12px;
+  color: #999;
+}
+/* ajustar a fonte da mensagem */
+.chatListItem--lastMsg {
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  width: 100%;
+}
+/* ajustar a fonte da local da mensagem */
+.chatListItem--lastMsg p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0px;
+}

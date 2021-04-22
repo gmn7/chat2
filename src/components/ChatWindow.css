@@ -1,0 +1,87 @@
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.chatWindow--header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatWindow--headerinfo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatWindow--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.chatWindows--name {
+  font-size: 17px;
+  color: #000;
+}
+
+.chatWindow--headerbuttons {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.chatWindow--btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatWindow--body {
+  flex: 1;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+}
+
+.chatWindow--footer {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.chatWindow--pre {
+  display: flex;
+  margin: 0 15px;
+}
+.chatWindow--inputarea {
+  flex: 1;
+}
+.chatWindows--input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #4a4a4a;
+  padding-left: 15px;
+}
+.chatWindow--pos {
+  display: flex;
+  margin: 0 15px;
+}
+aside.emoji-picker-react {
+  width: auto;
+  background: none;
+}
